@@ -3,7 +3,10 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule, MdCommonModule, MdMenuModule, MdToolbarModule} from '@angular/material';
+import {
+    MdButtonModule, MdCardModule, MdCheckboxModule, MdCommonModule, MdGridListModule, MdMenuModule,
+    MdToolbarModule
+} from '@angular/material';
 
 @NgModule({
     declarations: [
@@ -16,7 +19,9 @@ import {MdButtonModule, MdCheckboxModule, MdCommonModule, MdMenuModule, MdToolba
         MdCheckboxModule,
         MdMenuModule,
         MdCommonModule,
-        MdToolbarModule
+        MdToolbarModule,
+        MdCardModule,
+        MdGridListModule
     ],
     providers   : [],
     bootstrap   : [AppComponent]
