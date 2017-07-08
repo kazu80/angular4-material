@@ -12,9 +12,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      {name: '東京', temperature: 36},
-      {name: '大阪', temperature: 35},
-      {name: '福岡', temperature: 34}
+      {name: '東京', temperature: 36, src: '../assets/image/tokyo.jpg'},
+      {name: '大阪', temperature: 35, src: '../assets/image/osaka.jpg'},
+      {name: '福岡', temperature: 34, src: '../assets/image/fukuoka.jpg'}
     ]
   }
 }

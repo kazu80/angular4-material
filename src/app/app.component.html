@@ -3,9 +3,12 @@
 
 <main>
     <md-card [style.padding]="0" *ngFor="let item of items">
-        <md-grid-list cols="2" rowHeight="50px" [style.padding]="0">
-            <md-grid-tile>{{item.name}}</md-grid-tile>
-            <md-grid-tile>{{item.temperature}}℃</md-grid-tile>
-        </md-grid-list>
+        <img md-card-image src="{{item.src}}">
+        <md-card-content>
+            <md-grid-list cols="2" rowHeight="50px" [style.padding]="0">
+                <md-grid-tile>{{item.name}}</md-grid-tile>
+                <md-grid-tile>{{item.temperature}}℃</md-grid-tile>
+            </md-grid-list>
+        </md-card-content>
     </md-card>
 </main>
